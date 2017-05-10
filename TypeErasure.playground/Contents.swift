@@ -40,7 +40,6 @@ protocol UIFieldType {
 }
 
 
-//MARK: Text Field
 class TextField: UIView {
     var value: String?
     typealias DataType = String
@@ -54,7 +53,6 @@ extension TextField: UIFieldType {
     }
 }
 
-//MARK: Date Picker
 class DatePicker: UIDatePicker {
     var value: Date?
     typealias DataType = Date
@@ -67,7 +65,6 @@ extension DatePicker: UIFieldType {
         return .valid
     }
 }
-
 
 let firstName = TextField()
 let lastName = TextField()
