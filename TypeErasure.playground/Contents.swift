@@ -74,8 +74,10 @@ let date = DatePicker()
 // ⚠️ Protocol 'UIFieldType' can only be used as a generic constraint
 // because it has Self or associated type requirements
 
+
+//MARK: Solution
+
 struct AnyField {
-    
     private let _validate: () -> ValidationResult
     
     init<Field: UIFieldType>(_ field: Field) {
