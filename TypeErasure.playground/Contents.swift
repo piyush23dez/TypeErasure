@@ -71,6 +71,8 @@ let lastName = TextField()
 let date = DatePicker()
 
 //let fields: [UIFieldType] = [firstName, lastName, date]
+// ⚠️ Protocol 'UIFieldType' can only be used as a generic constraint
+// because it has Self or associated type requirements
 
 struct AnyField {
     
