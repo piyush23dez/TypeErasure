@@ -2,7 +2,12 @@
 
 import UIKit
 
-/* http://swiftrien.blogspot.com/2015/05/swift-enum-compare-design-pattern.html?m=1 */
+//MARK: Type Erasure: 1
+
+/* Comparing enum cases, we need to override below function
+   http://swiftrien.blogspot.com/2015/05/swift-enum-compare-design-pattern.html?m=1
+*/
+
 
 func == (left: ValidationResult, right: ValidationResult) -> Bool {
     
@@ -91,6 +96,7 @@ if allValid {
 }
 
 
+//MARK: Type Erasure: 2
 protocol Mario {
     associatedtype ActionType
     func attack(action: ActionType)
